@@ -1,0 +1,159 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: 'Hello world'
+  to_spanish: 'translate to spanish'
+  to_english: 'translate to english'
+  welcome: 'Welcome'
+  login: 'Login'
+  sign_up: 'Sign up'
+  help: 'Help'
+  quotations: 'Quotations'
+  calculations: 'Projects'
+  interest_links: 'Links of interest'
+  develop_by: 'Site manufactured by'
+  landing:
+    section_1:
+      title: 'Your energy efficiency'
+      subtitle: 'Steps to improve!'
+      buttons:
+        motors: 'Efficiency motors'
+        bad_fdp: 'Poor power factor'
+      explanations:
+        motors: 'Enter the plate values ​​of all three-phase motors that require optimization (up to 600 volts) of any power. From there you will receive a quote with the saving potential for your electric motors.'
+        bad_fdp: 'Enter the fine of Mal of power factor of your ticket or invoice and you will receive a quote to solve this problem. All in 3 simple steps.'
+        foot_title: 'Passion for efficiency'
+    section_2:
+      title: 'Quotate ... Implements ... Optimizes'
+      subtitle: 'the environment and the pocket of your company will thank you!'
+      subsections:
+        left:
+          title: 'Focused people'
+          body: 'An agile, simple and intuitive method for you to automate your projects, it generates graphs that you can present to top management.'
+        center:
+          title: 'We work with you'
+          body: 'Based on your information we give you a free quote! after which you can get in touch with our engineers to implement the solution to your problem.'
+        right:
+          title: 'Optimize your consumption'
+          body: 'Do not waste money paying fines for energy deprivation, this is a great cause of waste of money in companies.'
+    section_3:
+      title: 'Available in'
+  links:
+    new_calculation: 'New project'
+    breadcrumbs:
+      home: 'Home'
+      calculations: 'Projects'
+      motors: 'Motors'
+      quotations: 'Quotations'
+  buttons:
+    save: 'Save'
+    close: 'Close'
+    delete: 'Delete'
+    erase_question: 'are you sure about that?'
+  pages:
+    calculations:
+      engine_based:
+        title: 'Motors efficiency based projects'
+        title2: 'Project details'
+        new_quotation: 'New quotation'
+        calculations_fields:
+          name: 'Name / alias'
+          value: 'KW value per hour'
+          average_fdp: 'Average Efficiency (%)'
+          total_kw: 'Total kW / month'
+          kw: 'kW/h'
+          kvar: 'Kvar'
+          cost: 'Cost / month'
+          fine: 'Fine / month'
+          total: 'Total'
+      fdp_based:
+        title: 'You can request a quote by sending an image or just with the fine of your ticket'
+        calculations_fields:
+          fdp_reference: 'Reference power factor'
+          created_at: 'Application date'
+    quotations:
+      engine_based:
+        title: 'Quotations'
+        subtitle: 'motors based projects'
+        subtitle_2: 'image reference or ticket based ones'
+        fields:
+          calculation: 'Project'
+          user: 'User'
+          comment: 'Comment'
+          reference_image: 'Reference image'
+          pdf: 'Pdf'
+          created_at: 'Application date'
+          fdp_reference: 'Efficiency'
+  forms:
+    calculations:
+      title: 'Add project'
+      fields:
+        name: 'Name / alias'
+        cost: 'Cost kW/h'
+    quotations:
+      title: 'Request for face-to-face quotation'
+      fields:
+        comment: 'Commentary'
+        fine: 'Fine for power factor'
+        reference_image: 'Reference Image'
+        button: 'Image'
+    motors:
+      title: 'Engines'
+      fields:
+        name: 'Name / alias'
+        power: 'Power (kW / h)'
+        volt: 'Voltage (volts)'
+        amp: 'Current (amperes)'
+        average_time: 'Average monthly usage (hours)'
+        hours: 'Hours per day'
+        days: 'Days per month'
+        efficiency: 'Efficiency (%)'
+        kw: 'kW monthly consumed'
+    sign_in:
+      title: 'Log in'
+      username: 'User'
+      username_placeholder: 'Enter your username'
+      password: 'Password'
+      password_placeholder: 'Enter your password'
+      button: 'Log in'
+    sign_up:
+      title: 'Register'
+      username: 'User'
+      username_placeholder: 'Enter your username'
+      password: 'Password'
+      password_placeholder: 'Enter your password'
+      button: 'Sign up'
+  date:
+    month_names:
+    -
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December'

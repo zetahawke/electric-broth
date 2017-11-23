@@ -1,0 +1,159 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  hello: 'Hola Mundo'
+  to_spanish: 'traducir al español'
+  to_english: 'traducir al inglés'
+  welcome: 'Bienvenido'
+  login: 'Ingresar'
+  sign_up: 'Registrarse'
+  help: 'Ayuda'
+  quotations: 'Cotizaciones'
+  calculations: 'Proyectos'
+  interest_links: 'Enlaces de interés'
+  develop_by: 'Sitio fabricado por'
+  landing:
+    section_1:
+      title: 'Tu eficiencia energética'
+      subtitle: '¡A pasos de mejorar!'
+      buttons:
+        motors: 'Eficiencia motores'
+        bad_fdp: 'Mal factor de potencia'
+      explanations:
+        motors: 'Ingresa los valores de placa de todos los motores trifásicos que requieran optimizar (de hasta 600 volts), de cualquier potencia. A partir de ello recibirás una cotización con el potencial de ahorro para tus motores eléctricos.'
+        bad_fdp: 'Ingresa la multa de Mal factor de potencia de tu boleta o factura y recibirás una cotización para solucionar este problema. Todo en 3 simples pasos.'
+      foot_title: 'Pasión por la eficiencia'
+    section_2:
+      title: 'Cotiza... Implementa... Optimiza'
+      subtitle: 'el medio ambiente y el bolsillo de tu empresa te lo agradecerán!'
+      subsections:
+        left:
+          title: 'Enfocado a las personas'
+          body: 'Un método ágil, sencillo e intuitivo para que puedas automatizar tus proyectos, genera gráficos que puedas presentar a las altas gerencias.'
+        center:
+          title: 'Trabajamos contigo'
+          body: 'En base a tu información te damos una cotización gratis! tras la cual podrás ponerte en contacto con nuestros ingenieros para la implementación de la solución a tu problema.'
+        right:
+          title: 'Optimizar tu consumo'
+          body: 'No mal gastes dinero pagando multas por desaprobechamiento energético, esta es una gran causa de desperdicio de dinero en las empresas.'
+    section_3:
+      title: 'Disponible en'
+  links:
+    new_calculation: 'Nuevo proyecto'
+    breadcrumbs:
+      home: 'Inicio'
+      calculations: 'Proyectos'
+      motors: 'Motores'
+      quotations: 'Cotizaciones'
+  buttons:
+    save: 'Guardar'
+    close: 'Cerrar'
+    delete: 'Eliminar'
+    erase_question: 'deseas eliminarlo?'
+  pages:
+    calculations:
+      engine_based:
+        title: 'Proyecto en base de eficiencia de motores'
+        title2: 'Detalle del proyecto'
+        new_quotation: 'Solicitar cotización'
+        calculations_fields:
+          name: 'Nombre / alias'
+          value: 'Valor kW por hora'
+          average_fdp: 'Promedio de eficiencia (%)'
+          total_kw: 'Total kW/mes'
+          kw: 'kW/h'
+          kvar: 'Kvar'
+          cost: 'Costo/mes'
+          fine: 'Multa/mes'
+          total: 'Total'
+      fdp_based:
+        title: 'Puedes solicitar una cotización enviando una imagen o solo con la multa de tu boleta'
+        calculations_fields:
+          fdp_reference: 'Factor de potencia referencial'
+          created_at: 'Fecha de solicitud'
+    quotations:
+      engine_based:
+        title: 'Cotizaciones'
+        subtitle: 'a base de proyecto de motores'
+        subtitle_2: 'a base de referencia o boleta'
+        fields:
+          calculation: 'Proyecto'
+          user: 'Usuario'
+          comment: 'Comentario'
+          reference_image: 'Imagen de referencia'
+          pdf: 'Pdf'
+          created_at: 'Solicitado el'
+          fdp_reference: 'Eficiencia referencial'
+  forms:
+    calculations:
+      title: 'Añadir proyecto'
+      fields:
+        name: 'Nombre / alias'
+        cost: 'Costo kW/h'
+    quotations:
+      title: 'Solicitud de cotización presencial'
+      fields:
+        comment: 'Comentario'
+        fine: 'Multa por mal factor de potencia'
+        reference_image: 'Imagen de referencia'
+        button: 'Imagen'
+    motors:
+      title: 'Motores'
+      fields:
+        name: 'Nombre / alias'
+        power: 'Potencia (kW/h)'
+        volt: 'Tensión (volts)'
+        amp: 'Corriente (amperes)'
+        average_time: 'Uso promedio mensual (horas)'
+        hours: 'Horas al día'
+        days: 'Días al mes'
+        efficiency: 'Eficiencia (%)'
+        kw: 'kW consumidos al mes'
+    sign_in:
+      title: 'Ingresar'
+      username: 'Usuario'
+      username_placeholder: 'Ingresa tu usuario'
+      password: 'Contraseña'
+      password_placeholder: 'Ingresa tu contraseña'
+      button: 'Ingresar'
+    sign_up:
+      title: 'Registrarse'
+      username: 'Usuario'
+      username_placeholder: 'Ingresa tu usuario'
+      password: 'Contraseña'
+      password_placeholder: 'Ingresa tu contraseña'
+      button: 'Ingresar'
+  date:
+    month_names:
+    -
+    - Enero
+    - Febrero
+    - Marzo
+    - Abril
+    - Mayo
+    - Junio
+    - Julio
+    - Agosto
+    - Septiembre
+    - Octubre
+    - Noviembre
+    - Diciembre

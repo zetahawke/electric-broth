@@ -1,0 +1,238 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ @import "bootstrap";
+ */
+
+
+@import "materialize/components/color";
+@import "materialize/extras/nouislider";
+$primary-color: color("green", "darken-1") !default;
+@import 'materialize';
+
+html{
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0,0,0,0.87) !important;
+  //background-color:#51c4f3;
+}
+
+body, html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body{
+  //color: white;
+  //@extend .red, .darken-1;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: 100;
+}
+
+nav{
+background-color:#8bcb71;
+}
+
+.white-words {
+  color: white !important;
+}
+
+.center-object {
+  margin: 0 auto;
+}
+
+.card-form {
+  .small {
+    width: 320px;
+  }
+
+  .medium {
+    width: 550px;
+  }
+
+  .large {
+    width: 720px;
+  }
+}
+
+.section{
+  display: table;
+  height: 80%;
+  positition: relative;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.promo i {
+  margin: 40px 0;
+  color: #ee6e73;
+  font-size: 7rem;
+  display: block;
+}
+
+div.white{
+  color: rgba(0,0,0,0.87);
+
+  a {
+    color: rgba(0,0,0,0.87);
+  }
+}
+
+.google-logo{
+  width: 390px;
+}
+
+.apple-logo{
+  width: 335px;
+  margin-top: 23px;
+}
+
+.modal.bottom-sheet {
+  max-height: 80% !important;
+}
+
+.sign-user{
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 3em;
+  color: white;
+}
+
+.icon-link{
+  border-radius: 50%;
+  background-color: white;
+  color: #9e9e9e;
+  height: 58px;
+  width: 58px;
+
+  a{
+    color: #9e9e9e !important;
+  }
+}
+
+a{
+  text-decoration: none !important;
+  color: rgba(0,0,0,0.87);
+}
+
+//.material-icons {
+//  color: rgba(0,0,0,0.87);
+//}
+
+nav {
+  .material-icons {
+    color: white
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.alert {
+  position: relative;
+  border: 0px;
+  text-align: left;
+  font-size: 1.2em;
+  color: white;
+}
+
+.alert-danger {
+  background-color: #f2d4cd;
+  border-color: #efcac1;
+  color: #983e28;
+}
+
+.alert-success {
+  background-color: #1BC98E;
+  border-color: #1BC98E;
+  color: #e7fcf5;
+}
+
+.alert-notice {
+  background-color: darkturquoise;
+  border-color: #1BC98E;
+}
+
+.special-color{
+  background-color: #8bcb71;
+}
+
+footer.page-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #8bcb71 !important;
+}
+
+.energy-store-logo {
+  background-image: image-url('logoweb.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 200px;
+  margin: 10px;
+  float: left;
+}
+
+label {
+  font-size: 16px;
+
+  i {
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 5px
+  }
+}
+
+.breadcrumb-nav {
+  height: 30px;
+  padding-left: 15px;
+  line-height: 30px;
+  text-align: left;
+
+  a {
+    margin: 0;
+    font-size: 12px !important;
+  }
+}
+
+.just {
+  text-align: justify;
+}
+
+.waves-effect {
+  input {
+    font-style: normal !important;
+    height: 28px !important;
+    line-height: normal;
+    border: 0 !important;
+  }
+}
+
+@media screen and ( max-width: 992px ) {
+  .energy-store-logo {
+    width: 150px;
+    height: 75px;
+    margin-right: -80px;
+    float: right;
+  }
+}
+
+@media screen and ( max-width: 992px ) {
+  .responsive-table {
+    max-width: 100%;
+  }
+}

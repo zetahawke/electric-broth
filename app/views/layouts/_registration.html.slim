@@ -1,0 +1,17 @@
+/! Modal Structure
+#registration_modal.modal.bottom-sheet
+  .modal-content
+    .sign-user.z-depth-1.white.center-align
+      h2
+        = t('forms.sign_up.title')
+      = form_for(:user, :url => registration_path(:user)) do |f|
+        = f.label :email, 'Email'
+        = f.text_field :email, placeholder: t('forms.sign_up.username_placeholder')
+        = f.label :password, 'Password'
+        = f.password_field :password, placeholder: t('forms.sign_up.password_placeholder')
+        br/
+        = f.submit t('forms.sign_up.button'), class: "waves-effect waves-light btn"
+
+  .modal-footer
+    a.modal-action.modal-close.waves-effect.waves-green.btn-flat href="#!"
+      = t('buttons.close')

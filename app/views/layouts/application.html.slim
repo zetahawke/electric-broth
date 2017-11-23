@@ -1,0 +1,70 @@
+doctype html
+html
+  head
+    meta charset="utf-8" /
+    meta content="IE=edge" http-equiv="X-UA-Compatible" /
+    meta content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1" name="viewport" /
+    meta content="no" name="msapplication-tap-highlight" /
+    meta content="yes" name="mobile-web-app-capable" /
+    meta content="Energía Store" name="application-name" /
+    meta content="yes" name="apple-mobile-web-app-capable" /
+    meta content="black" name="apple-mobile-web-app-status-bar-style" /
+    meta content="Energía Store" name="apple-mobile-web-app-title" /
+
+    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    title Electric Broth
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .navbar-fixed.z-depth-1
+      nav
+        .nav-wrapper
+          a.button-collapse data-activates="mobile-demo" href="#" 
+            i.material-icons menu
+          ul.right.hide-on-med-and-down
+            - if current_user.blank?
+              li
+                = link_to t('login'), new_user_session_path
+              li
+                = link_to new_user_registration_path do
+                  i.material-icons.right> power_settings_new
+                  = t('sign_up')
+            - else
+              li
+                = link_to destroy_user_session_path, method: "delete", data: { turbolinks: :false }, data: { turbolinks: :false } do
+                  i.material-icons.right> power_settings_new
+                  | Bienvenido #{current_user.email}
+          ul#mobile-demo.side-nav
+            - if current_user.blank?
+              li
+                = link_to t('login'), new_user_session_path
+              li
+                = link_to t('sign_up'), new_user_registration_path
+            - else
+              li
+                = link_to destroy_user_session_path, method: "delete", data: { turbolinks: :false } do
+                  = "Bienvenido #{current_user.email}"
+    p#notice.center= 
+    .container
+      .card
+        .card-block
+          = yield
+    footer.page-footer
+      .container
+        .row
+          .col.l4.offset-l2.s12
+            h5.white-text
+              = t('interest_links')
+            ul
+              li
+                a.grey-text.text-lighten-3 href="http://www.acee.cl/"  AChEE
+      .footer-copyright
+        .container
+          | © 2017 Electric Broth &amp; Developmind Copyright
+          a.grey-text.text-lighten-4.right href="#!"
+            = t('develop_by') 
+            strong Developmind
+    = render 'layouts/registration'
+    = render 'layouts/login'
